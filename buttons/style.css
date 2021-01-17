@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: `'Montserrat', sans-serif;
+    color: white;
+    background-color: #333;
+    font-size: 25px;
+    
+}
+.bg {
+    width: 100vw;
+    height: 100vw;
+    background-color: #333;
+}
+
+.btn {
+
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    padding: 10px 30px;
+    transform: translateX(-50%);
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+
+
+}
+
+.btn:hover {
+    background-color: white;
+    color: black;
+    transition: 3s;
+
+}
+.zoom {
+    left: 20%;
+}
+
+.move {
+    left: 40%;
+}
+
+.color {
+    left:60%;
+}
+
+.square {
+    position: absolute;
+    top: 120px;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    transition: 1s;
+
+}
+
+.red {
+    left: 20%;
+    background-color: red;
+    box-shadow: 10px 10px 8px red;
+    
+}
+
+.blue {
+    left: 40%;
+    background-color: blue;
+    box-shadow: 10px 10px 8px blue;
+}
+.green {
+    left: 60%;
+    background-color: green;
+    box-shadow: 10px 10px 8px green;
+    
+}
+
+.zoom:hover ~ .square {
+    width: 150px;
+    height: 150px;
+    
+}
+
+.move:hover ~ .square {
+    top: 300px;
+}
+.color:hover ~ .square {
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: none;
+}
+.zoom:hover ~ .bg {
+    background-color: tomato;
+}
+.move:hover~ .bg {
+    background-color: teal;
+}
+.color:hover~ .bg {
+    background-color: rgba(221, 212, 218, 0.26);
+}
